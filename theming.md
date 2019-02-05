@@ -34,14 +34,11 @@ Let's say we want a dark theme toggle switch:
 ```js
 class MyParent extends LitElement {
   static get styles() {
-    return [
-      css`
-        :host {
-          background: var(--background-color);
-          color: var(--text-color);
-        }
-      `
-    ];
+    return css`
+      :host {
+        background: var(--background-color);
+        color: var(--text-color);
+      }`
   }
 
   connectedCallback() {
