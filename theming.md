@@ -25,6 +25,12 @@ Bear in mind, nothing has actually happened yet. We have declared a variable, bu
   }
 ```
 
+To programtically update the value of a property we can use:
+```
+this.style.setProperty("--background-color", "red")
+```
+
+
 Custom properties permeate shadow boundaries, so no matter how many custom components you have, they will be able to use this property.
 
 Now for the fun stuff:
