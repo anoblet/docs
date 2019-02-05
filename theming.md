@@ -32,6 +32,7 @@ Now for the fun stuff:
 Let's say we want a dark theme toggle switch:
 
 ```js
+
 class MyParent extends LitElement {
   static get styles() {
     return css`
@@ -39,15 +40,15 @@ class MyParent extends LitElement {
         background: var(--background-color);
         color: var(--text-color);
       }
-    `
+    `;
   }
 
   connectedCallback() {
     super.connectedCallback();
     this.addEventListener("update-theme", e => {
-      const theme = e.detail;
-      theme.map(property => {
-        this.style.setProperty(property.property, property.value);
+      const themeProperties = e.detail;
+      themeProperties.map(theme => {
+        this.style.setProperty(theme.property, theme.value);
       });
     });
   }
@@ -63,29 +64,31 @@ class MyChild extends LitElement {
   theme = "light";
 
   render() {
-    const dark = [
-      { property: "--background-color", value: "black" },
-      { property: "--text-color", value: "white" }
-    ];
-    const light = [
-      { property: "--background-color", value: "white" },
-      { property: "--text-color", value: "black" }
-    ];
     return html`
       <button
-        @click="${
-          () => {
-            const theme = this.theme === "light" ? dark : light;
-            this.dispatchEvent(
-              new CustomEvent("update-theme", {
-                bubbles: true,
-                composed: true,
-                detail: theme
-              })
-            );
-            this.theme = this.theme === "light" ? "dark" : "light";
-          }
-        }"
+        @click="${() => {
+        let theme;
+        if (this.theme === "light") {
+          theme = [
+            { property: "--background-color", value: "black" },
+            { property: "--text-color", value: "white" }
+          ];
+          this.theme = "dark";
+        } else {
+          theme = [
+            { property: "--background-color", value: "white" },
+            { property: "--text-color", value: "black" }
+          ];
+          this.theme = "light";
+        }
+        this.dispatchEvent(
+          new CustomEvent("update-theme", {
+            bubbles: true,
+            composed: true,
+            detail: theme
+          })
+        );
+      }}"
       >
         Toggle
       </button>
