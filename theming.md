@@ -38,7 +38,8 @@ class MyParent extends LitElement {
       :host {
         background: var(--background-color);
         color: var(--text-color);
-      }`
+      }
+    `
   }
 
   connectedCallback() {
