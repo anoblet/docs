@@ -43,8 +43,8 @@ Custom properties permeate shadow boundaries, so no matter how many custom compo
 
 ## Patterns
 
-// Loop an array of objects and set custom property
-TS: 
+Loop an array of objects and set custom property
+: 
 ```
 const theme = [
     {
