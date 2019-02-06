@@ -59,10 +59,7 @@ const theme = [
 ]
 ```
 ```
-<button @click=${this.setTheme(theme}>Set theme</button>
-```
-```
-// This would be pdone on the parent element, or the app shell
+// This would be done on the parent element, or the app shell
 
 setTheme(theme) { 
   theme.map(propertyMap =>
@@ -70,12 +67,18 @@ setTheme(theme) {
 };
 ```
 ```
-
+<button @click=${this.setTheme(theme}>Set theme</button>
+```
+Or with pure funciton syntax:
+```
 const setTheme = (theme, element) => theme.map(propertyMap => {
     element.style.setProperty(propertyMap.property, propertyMap.value);
 });
 ```
+```
+<button @click=${this.setTheme(theme}>Set theme</button>
+```
 
-Will set your colors to that of the English flag :)
+This will set your colors to that of the English flag :)
 
 You can see it in action here: https://codesandbox.io/s/62j7nkzx03
