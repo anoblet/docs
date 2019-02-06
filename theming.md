@@ -42,20 +42,23 @@ this.style.setProperty("--background-color", "red")
 Custom properties permeate shadow boundaries, so no matter how many custom components you have, they will be able to reference this property.
 
 ## Patterns
- 
- JS:
-Now for the fun stuff:
 
-```
- themeProperties.map(theme => {
-    this.style.setProperty(theme.property, theme.value);
-});
-```
-
+// Loop an array of objects and set custom property
 TS: 
-
 ```
- themeProperties.map(theme => {
+const theme = [
+    {
+      property: "--background-color",
+      value: "red"
+    },
+    {
+      property: "--text-color",
+      value: "red"
+    } 
+]
+```
+```
+const setTheme = (theme) => themeProperties.map(theme => {
     this.style.setProperty(theme.property, theme.value);
 });
 ```
