@@ -77,7 +77,7 @@ const theme = [
   } 
 ]
 ```
-Your source is abritrary
+This could come from redux, firebase, or a static value
 ```
 <button @click=${setTheme(theme}>Set theme</button>
 ```
