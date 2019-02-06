@@ -69,14 +69,14 @@ setTheme(theme) {
 ```
 <button @click=${this.setTheme(theme}>Set theme</button>
 ```
-Or with pure funciton syntax:
+Or with pure funcitons:
 ```
 const setTheme = (theme, element) => theme.map(propertyMap => {
     element.style.setProperty(propertyMap.property, propertyMap.value);
 });
 ```
 ```
-<button @click=${this.setTheme(theme}>Set theme</button>
+<button @click=${setTheme(theme, this}>Set theme</button>
 ```
 
 This will set your colors to that of the English flag :)
