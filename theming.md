@@ -30,10 +30,28 @@ To programtically update the value of a property we can use:
 this.style.setProperty("--background-color", "red")
 ```
 
+Custom properties permeate shadow boundaries, so no matter how many custom components you have, they will be able to reference this property.
 
-Custom properties permeate shadow boundaries, so no matter how many custom components you have, they will be able to use this property.
+Some es2015 stuff:
 
+ # This is where es2015 comes in handy
+ 
+ JS:
 Now for the fun stuff:
+
+```
+ themeProperties.map(theme => {
+    this.style.setProperty(theme.property, theme.value);
+});
+```
+
+TS: 
+
+```
+ themeProperties.map(theme => {
+    this.style.setProperty(theme.property, theme.value);
+});
+```
 
 Let's say we want a dark theme toggle switch:
 
