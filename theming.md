@@ -61,6 +61,7 @@ const theme = [
 <button @click=${setTheme(theme}>Set theme</button>
 ```
 ```
+// This would be pdone on the parent element, or the app shell
 const setTheme = (theme) => theme.map(propertyMap => {
     this.style.setProperty(propertyMap.property, propertyMap.value);
 });
