@@ -58,8 +58,8 @@ const theme = [
 ]
 ```
 ```
-const setTheme = (theme) => themeProperties.map(theme => {
-    this.style.setProperty(theme.property, theme.value);
+const setTheme = (theme) => theme.map(propertyMap => {
+    this.style.setProperty(propertyMap.property, theme.value);
 });
 ```
 
