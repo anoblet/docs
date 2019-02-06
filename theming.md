@@ -46,6 +46,7 @@ Custom properties permeate shadow boundaries, so no matter how many custom compo
 Loop an array of objects and set custom property
 : 
 ```
+// This could be defined anywhere (Firebase, a form etc...)
 const theme = [
     {
       property: "--background-color",
@@ -62,22 +63,6 @@ const setTheme = (theme) => theme.map(propertyMap => {
     this.style.setProperty(propertyMap.property, propertyMap.value);
 });
 ```
-
-Combined with:
-
-```
-const theme = [
-  {
-    property: "--background-color",
-    value: "white"
-  },
-  {
-    property: "--text-color",
-    value: "red"
-  } 
-]
-```
-This could come from redux, firebase, or a static value
 ```
 <button @click=${setTheme(theme}>Set theme</button>
 ```
