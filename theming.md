@@ -6,7 +6,7 @@ Custom properties can be defined as follows:
 
 ```css
 :host {
-  --prop: value
+  --my-property: value
 }
 ```
 
