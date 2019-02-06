@@ -17,11 +17,20 @@ An example of this would be:
   --background-color: #DDDDDD
 }
 ```
+
 Bear in mind, nothing has actually happened yet. We have declared a variable, but we have not used it. In order to use the custom property, we would need to do this:
 
 ```css
   .myChildElement {
     background: var(--background-color);
+  }
+```
+
+We can also set a fallback value
+
+```css
+  .myChildElement {
+    background: var(--background-color, "blue");
   }
 ```
 
