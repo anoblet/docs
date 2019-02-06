@@ -59,76 +59,25 @@ const theme = [
 ```
 ```
 const setTheme = (theme) => theme.map(propertyMap => {
-    this.style.setProperty(propertyMap.property, theme.value);
+    this.style.setProperty(propertyMap.property, propertyMap.value);
 });
 ```
 
-Let's say we want a dark theme toggle switch:
+Combined with:
 
-```js
-
-class MyParent extends LitElement {
-  static get styles() {
-    return css`
-      :host {
-        background: var(--background-color);
-        color: var(--text-color);
-      }
-    `;
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-    this.addEventListener("update-theme", e => {
-      const themeProperties = e.detail;
-      themeProperties.map(theme => {
-        this.style.setProperty(theme.property, theme.value);
-      });
-    });
-  }
-
-  render() {
-    return html`
-      <my-child></my-child>
-    `;
-  }
-}
-
-class MyChild extends LitElement {
-  theme = "light";
-
-  render() {
-    return html`
-      <button
-        @click="${() => {
-        let theme;
-        if (this.theme === "light") {
-          theme = [
-            { property: "--background-color", value: "black" },
-            { property: "--text-color", value: "white" }
-          ];
-          this.theme = "dark";
-        } else {
-          theme = [
-            { property: "--background-color", value: "white" },
-            { property: "--text-color", value: "black" }
-          ];
-          this.theme = "light";
-        }
-        this.dispatchEvent(
-          new CustomEvent("update-theme", {
-            bubbles: true,
-            composed: true,
-            detail: theme
-          })
-        );
-      }}"
-      >
-        Toggle
-      </button>
-      This is text in a child
-    `;
-  }
-}
 ```
+const theme = [
+  {
+    property: "--background-color",
+    value: "white"
+  },
+  {
+    property: "--text-color",
+    value: "red"
+  } 
+]
+
+<button @click=${setTheme(theme}>Set theme</button>
+```
+
 You can see it in action here: https://codesandbox.io/s/62j7nkzx03
