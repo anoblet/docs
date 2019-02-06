@@ -65,7 +65,8 @@ const theme = [
 // This would be pdone on the parent element, or the app shell
 
 const setTheme = (theme) => theme.map(propertyMap => {
-    this.style.setProperty(propertyMap.property, propertyMap.value);
+    const component = document.body;
+    component.style.setProperty(propertyMap.property, propertyMap.value);
 });
 ```
 
