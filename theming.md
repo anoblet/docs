@@ -41,9 +41,7 @@ this.style.setProperty("--background-color", "red")
 
 Custom properties permeate shadow boundaries, so no matter how many custom components you have, they will be able to reference this property.
 
-Some es2015 stuff:
-
- # This is where es2015 comes in handy
+## Patterns
  
  JS:
 Now for the fun stuff:
