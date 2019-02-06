@@ -76,7 +76,9 @@ const theme = [
     value: "red"
   } 
 ]
-
+```
+Your source is abritrary
+```
 <button @click=${setTheme(theme}>Set theme</button>
 ```
 
