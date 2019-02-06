@@ -80,6 +80,6 @@ const theme = [
 <button @click=${setTheme(theme}>Set theme</button>
 ```
 
-Will set your colors to that of the English flag :)
+Will set your colors to that of the English flag :) We support you brethren!
 
 You can see it in action here: https://codesandbox.io/s/62j7nkzx03
