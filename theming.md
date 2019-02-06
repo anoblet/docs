@@ -43,14 +43,13 @@ Custom properties permeate shadow boundaries, so no matter how many custom compo
 
 ## Patterns
 
-Loop an array of objects and set custom property
-: 
+Loop an array of objects and set custom property:
 ```
 // This could be defined anywhere (Firebase, a form etc...)
 const theme = [
     {
       property: "--background-color",
-      value: "red"
+      value: "white"
     },
     {
       property: "--text-color",
@@ -59,12 +58,12 @@ const theme = [
 ]
 ```
 ```
+<button @click=${setTheme(theme}>Set theme</button>
+```
+```
 const setTheme = (theme) => theme.map(propertyMap => {
     this.style.setProperty(propertyMap.property, propertyMap.value);
 });
-```
-```
-<button @click=${setTheme(theme}>Set theme</button>
 ```
 
 Will set your colors to that of the English flag :)
