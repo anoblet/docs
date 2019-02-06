@@ -59,7 +59,7 @@ const theme = [
 ]
 ```
 ```
-<button @click=${setTheme(theme}>Set theme</button>
+<button @click=${this.setTheme(theme}>Set theme</button>
 ```
 ```
 // This would be pdone on the parent element, or the app shell
