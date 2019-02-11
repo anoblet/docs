@@ -39,7 +39,7 @@ To programtically update the value of an element's property we can use:
 this.style.setProperty("--background-color", "red")
 ```
 
-Custom properties must always be values, are inherited by a host's children.
+Custom properties must always be values, they are inherited by a host's children and are a technique to permeate shadow boundaries.
 
 ## Patterns
 Assume our style definition is as follows:
