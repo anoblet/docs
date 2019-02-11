@@ -42,6 +42,13 @@ this.style.setProperty("--background-color", "red")
 Custom properties permeate shadow boundaries, so no matter how many custom components you have, they will be able to reference this property.
 
 ## Patterns
+Assume our style definition is as follows:
+```
+  :host {
+    background-color: var(--background-color, #fff);
+    text-color: var(--text-color, #000);
+  }
+```
 
 Loop an array of objects and set custom property:
 ```
@@ -78,6 +85,6 @@ const setTheme = (theme, element) => theme.map(propertyMap => {
 <button @click=${setTheme(theme, this}>Set theme</button>
 ```
 
-Either of those examples will set your colors to that of the English flag :) So useful!
+Either of those examples will set your colors to that of the English flag :)
 
 You can see it in action here: https://codesandbox.io/s/62j7nkzx03 (may not be updated)
