@@ -3,7 +3,7 @@
 ## Let's define out objectives
  * What is lit-html?
  * How do we define a theme?
- * How can we accomplish this complimentary to "timing of our app"?
+ * How can we accomplish this complimentary to the "timing of our app"?
    * Styles will be available on the app or user scope
      
 
