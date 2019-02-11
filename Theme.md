@@ -1,4 +1,4 @@
-# Theming in lit-element
+# Theming in lit-html
 
 Theming in lit-element relies on custom properties in css:
 
