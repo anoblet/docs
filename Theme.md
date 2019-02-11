@@ -68,7 +68,7 @@ setTheme(theme) {
 ```
 <button @click=${this.setTheme(theme}>Set theme</button>
 ```
-Pure funcitons:
+Pure function:
 ```
 const setTheme = (theme, element) => theme.map(propertyMap => {
     element.style.setProperty(propertyMap.property, propertyMap.value);
