@@ -1,5 +1,10 @@
 # Theming in lit-html
 
+## Let's define out objectives
+ * What is lit-html?
+ * How do we define a theme?
+ * How can we accomplish this complimentary to a lifecycle funciton?
+
 Theming in lit relies sometimes (a lot) on custom properties in css:
 
 Custom properties can be defined as follows:
