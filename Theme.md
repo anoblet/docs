@@ -58,7 +58,7 @@ const theme = [
     } 
 ]
 ```
-Class function
+Class
 ```
 setTheme(theme) { 
   theme.map(propertyMap =>
@@ -68,7 +68,7 @@ setTheme(theme) {
 ```
 <button @click=${this.setTheme(theme}>Set theme</button>
 ```
-Pure function:
+Pure
 ```
 const setTheme = (theme, element) => theme.map(propertyMap => {
     element.style.setProperty(propertyMap.property, propertyMap.value);
