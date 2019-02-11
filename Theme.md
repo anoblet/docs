@@ -39,7 +39,7 @@ To programtically update the value of an element's property we can use:
 this.style.setProperty("--background-color", "red")
 ```
 
-Custom properties permeate shadow boundaries, so no matter how many custom components you have, they will be able to reference this property.
+Custom properties are inherited by their children so no matter how many custom components you have, they will be able to reference a custom property
 
 ## Patterns
 Assume our style definition is as follows:
