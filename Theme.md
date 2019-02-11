@@ -34,7 +34,7 @@ We can also set a fallback value
   }
 ```
 
-To programtically update the value of a property we can use:
+To programtically update the value of an element's property we can use:
 ```
 this.style.setProperty("--background-color", "red")
 ```
