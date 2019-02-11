@@ -1,6 +1,6 @@
 # Theming in lit-html
 
-Theming in lit-element relies on custom properties in css:
+Theming in lit relies sometimes (a lot) on custom properties in css:
 
 Custom properties can be defined as follows:
 
