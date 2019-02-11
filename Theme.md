@@ -4,7 +4,8 @@
  * What is lit-html?
  * How do we define a theme?
  * How can we accomplish this complimentary to "timing of our app"?
-   * Styles should never be rendered if the user is not logged in or trying to log in
+   * Styles will be available on the app or user scope
+     
 
 Theming in lit relies sometimes (a lot) on custom properties in css:
 
