@@ -7,4 +7,4 @@ Atom is an IDE created by Github. It provides near-native support for working wi
  - [prettier-atom](https://atom.io/packages/prettier-atom) - Template literal highlighting and formatting
  - [docblockr](https://atom.io/packages/docblockr) - Documentation helper
  - [import-sort](https://atom.io/packages/atom-import-sort) - Sorts your imports
- - [import-cost](https://atom.io/packages/atom-import-cost) - Displays import costs lnline
+ - [import-cost](https://atom.io/packages/atom-import-cost) - Displays import costs inline
