@@ -1,0 +1,7 @@
+[Atom](https://atom.io/) is an IDE created by Github.
+
+### Recomended plugins
+ - [atom-typescript](https://atom.io/packages/atom-typescript) - Typescript support
+ - [prettier-atom](https://atom.io/packages/prettier-atom) - Template literal highlight and formatting
+ - [docblockr](https://atom.io/packages/docblockr) - Method documentation hotkeys
+ - [import-sort](https://atom.io/packages/atom-import-sort) - Sorts your imports
