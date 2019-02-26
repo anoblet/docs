@@ -1,8 +1,9 @@
-### How to delay rendering until actions are taken
- - https://codesandbox.io/s/jj7z294vv5
+### How to delay rendering until a promise is resolved (https://codesandbox.io/s/jj7z294vv5)
 
 ```js
-class MyClass extends LitElement() {
+import { LitElement, css, customElement, html } from "lit-element";
+
+class Element extends LitElement {
   static get properties() {
     return {
       beforeRenderComplete: {
@@ -14,10 +15,6 @@ class MyClass extends LitElement() {
   constructor() {
     super();
     this.beforeRenderComplete = false;
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
     this.beforeRender();
   }
 
@@ -38,4 +35,6 @@ class MyClass extends LitElement() {
     `;
   }
 }
+window.customElements.define("my-element", Element);
+
 ```
