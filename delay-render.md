@@ -1,4 +1,4 @@
-### How to delay rendering untill actions are taken
+### How to delay rendering until a promise is resolved
 
 ```js
 class MyClass extends LitElement() {
