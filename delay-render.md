@@ -26,7 +26,7 @@ class Element extends LitElement {
   }
 
   shouldUpdate() {
-    return this.beforeRenderComplete ? super.shouldUpdate() : false;
+    return this.beforeRenderComplete && super.shouldUpdate();
   }
 
   render() {
@@ -36,5 +36,4 @@ class Element extends LitElement {
   }
 }
 window.customElements.define("my-element", Element);
-
 ```
