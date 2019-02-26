@@ -1,7 +1,7 @@
 ### How to delay rendering until a promise is resolved (https://codesandbox.io/s/jj7z294vv5)
 
 ```js
-import { LitElement, css, customElement, html } from "lit-element";
+import { LitElement, html } from "lit-element";
 
 class Element extends LitElement {
   static get properties() {
@@ -36,4 +36,5 @@ class Element extends LitElement {
   }
 }
 window.customElements.define("my-element", Element);
+
 ```
