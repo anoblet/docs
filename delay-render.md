@@ -2,22 +2,32 @@
 
 ```js
 class MyClass extends LitElement() {
-  beforeRenderComplete = false;
-
   constructor() {
     super();
+    this.beforeRenderComplete = false;
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
     this.beforeRender();
   }
 
   async beforeRender() {
-    await setTimeout(this.style.setProperty("background", "red"), 250);
-    await setTimeout(this.style.setProperty("color", "blue"), 250);
+    await new Promise(function(resolve) {
+      setTimeout(() => resolve(), 2000);
+    });
     this.beforeRenderComplete = true;
-    this.requestUpdate():
+    this.requestUpdate();
   }
 
   shouldUpdate() {
     return this.beforeRenderComplete ? super.shouldUpdate() : false;
+  }
+
+  render() {
+    return html`
+      Hi!
+    `;
   }
 }
 ```
