@@ -10,7 +10,8 @@ class MyClass extends LitElement() {
   }
 
   async beforeRender() {
-    await setTimeout(this.style.setProperty("background", "red"), 3000);
+    await setTimeout(this.style.setProperty("background", "red"), 250);
+    await setTimeout(this.style.setProperty("color", "blue"), 250);
     this.beforeRenderComplete = true;
     this.requestUpdate():
   }
