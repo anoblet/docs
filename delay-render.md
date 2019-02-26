@@ -1,5 +1,5 @@
 ### How to delay rendering until actions are taken
-https://codesandbox.io/s/jj7z294vv5
+ - https://codesandbox.io/s/jj7z294vv5
 
 ```js
 class MyClass extends LitElement() {
