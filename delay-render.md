@@ -3,7 +3,7 @@
 
 ```js
 class MyClass extends LitElement() {
-    static get properties() {
+  static get properties() {
     return {
       beforeRenderComplete: {
         type: Boolean
