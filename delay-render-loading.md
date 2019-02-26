@@ -15,10 +15,6 @@ class Element extends LitElement {
   constructor() {
     super();
     this.beforeRenderComplete = false;
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
     this.beforeRender();
   }
 
@@ -40,5 +36,4 @@ class Element extends LitElement {
   }
 }
 window.customElements.define("my-element", Element);
-
 ```
