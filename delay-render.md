@@ -15,14 +15,13 @@ class Element extends LitElement {
   constructor() {
     super();
     this.beforeRenderComplete = false;
-    this.beforeRender();
+    this.beforeRender().then(() => (this.beforeRenderComplete = true));
   }
 
   async beforeRender() {
     await new Promise(function(resolve) {
       setTimeout(() => resolve(), 2000);
     });
-    this.beforeRenderComplete = true;
   }
 
   shouldUpdate() {
@@ -36,5 +35,4 @@ class Element extends LitElement {
   }
 }
 window.customElements.define("my-element", Element);
-
 ```
