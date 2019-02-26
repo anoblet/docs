@@ -1,9 +1,8 @@
 ### How to delay rendering until a promise is resolved (https://codesandbox.io/s/jj7z294vv5)
 
-```js
-import { LitElement, html } from "lit-element";
+```jsimport { LitElement, html } from "lit-element";
 
-class Element extends LitElement {
+class MyElement extends LitElement {
   static get properties() {
     return {
       beforeRenderComplete: {
@@ -34,5 +33,5 @@ class Element extends LitElement {
     `;
   }
 }
-window.customElements.define("my-element", Element);
+window.customElements.define("my-element", MyElement);
 ```
