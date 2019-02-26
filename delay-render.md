@@ -3,6 +3,14 @@
 
 ```js
 class MyClass extends LitElement() {
+    static get properties() {
+    return {
+      beforeRenderComplete: {
+        type: Boolean
+      }
+    };
+  }
+
   constructor() {
     super();
     this.beforeRenderComplete = false;
@@ -18,7 +26,6 @@ class MyClass extends LitElement() {
       setTimeout(() => resolve(), 2000);
     });
     this.beforeRenderComplete = true;
-    this.requestUpdate();
   }
 
   shouldUpdate() {
