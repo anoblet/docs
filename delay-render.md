@@ -1,6 +1,7 @@
 ### How to delay rendering until a promise is resolved (https://codesandbox.io/s/jj7z294vv5)
 
-```jsimport { LitElement, html } from "lit-element";
+```js
+import { LitElement, html } from "lit-element";
 
 class MyElement extends LitElement {
   static get properties() {
