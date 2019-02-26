@@ -31,3 +31,5 @@ class MyClass extends LitElement() {
   }
 }
 ```
+
+https://codesandbox.io/s/jj7z294vv5
