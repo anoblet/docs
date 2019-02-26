@@ -1,4 +1,4 @@
-### Delay render until promise is resolved - show loading text
+### Delay render until promise is resolved - show loading text (https://codesandbox.io/s/1wnq5woqz4)
 
 ```js
 import { LitElement, css, customElement, html } from "lit-element";
