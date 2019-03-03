@@ -1,3 +1,6 @@
+## Styles
+ - Define your styles in index.html
+
 ## Preconnect
 
 ```
