@@ -2,6 +2,7 @@
  - Define your styles in index.html
 
 ## Preconnect
+Preconnect to external resources
 
 ```
 <link rel="preconnect" href="https://fonts.googleapis.com" />
