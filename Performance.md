@@ -1,14 +1,25 @@
-## How to base64 encode your favicon
+
+
+## Preload fonts
+You'll want to host your fonts locally, so they can be cached. Then you want to preload them like this:
+
+```
+    <link
+      rel="preload"
+      href="/font/MaterialIcons-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+```
+
+## Chunking
+ - Import statically your app shell components
+ - Chunk large libs like Firebase
+ 
+## Favicon
 
 ```
 <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
 ```
-
-## Preload fonts
-
-## Webpack chunking strategies
- - Import statically your app shell components
- - Chunk large libs like Firebase
- 
-Chunking is a delicate balance of bundle size vs number of requests
 
