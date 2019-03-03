@@ -1,20 +1,20 @@
 ## Preconnect
 
 ```
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
 ```
 
 ## Preload fonts
 You'll want to host your fonts locally, so they can be cached. Then you want to preload them like this:
 
 ```
-  <link
-    rel="preload"
-    href="/font/MaterialIcons-Regular.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin="anonymous"
-  />
+<link
+  rel="preload"
+  href="/font/MaterialIcons-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
 ```
 
 ## Chunking
