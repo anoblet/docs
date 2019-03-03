@@ -1,5 +1,6 @@
 ## Styles
  - Define your styles in index.html
+ - Set your background in index.html
 
 ## Preconnect
 Preconnect to external resources
