@@ -22,6 +22,9 @@ You'll want to host your fonts locally, so they can be cached. Then you want to 
 />
 ```
 
+## Prefetch
+Prefetched resources if used in a main file will have an impact on scoring
+
 ## Chunking
  - Statically import your app shell resources/components
  - If a resource only provides side-effects(component registration) import it dynamically unless needed on first-render
