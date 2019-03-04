@@ -1,6 +1,6 @@
 ## Styles
- - Define your styles in index.html
- - Set your background in index.html
+ - Define your shell styles in index.html to avoid additional network requests
+ - Set your background color/image in index.html so that a refresh does not flash white
 
 ## Preconnect
 Preconnect to external resources
