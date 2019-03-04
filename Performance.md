@@ -7,6 +7,7 @@ Preconnect to external resources
 
 ```
 <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://www.google-analytics.com/" />
 ```
 
 ## Preload fonts
