@@ -23,7 +23,7 @@ You'll want to host your fonts locally, so they can be cached. Then you want to 
 ```
 
 ## Chunking
- - Import statically your app shell components
+ - Statically import your app shell resources/components
  - Chunk large libs like Firebase
  
 ## Favicon
