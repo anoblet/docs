@@ -23,9 +23,10 @@ You'll want to host your fonts locally, so they can be cached. Then you want to 
 ```
 
 ## Chunking
- - If a resource only provides side-effects(component registration) import it dynamically unless needed on first-render
  - Statically import your app shell resources/components
+ - If a resource only provides side-effects(component registration) import it dynamically unless needed on first-render
  - Chunk large libs like Firebase
+ - It's possible to chunk two dynamic imports together by providing the same `/* webpackChunkName */`
  
 ## Favicon
 
