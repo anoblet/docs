@@ -23,6 +23,7 @@ You'll want to host your fonts locally, so they can be cached. Then you want to 
 ```
 
 ## Chunking
+ - If a resource only provides side-effects(component registration) import it dynamically unless needed on first-render
  - Statically import your app shell resources/components
  - Chunk large libs like Firebase
  
