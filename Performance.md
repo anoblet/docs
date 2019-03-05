@@ -1,6 +1,6 @@
 # The last mile -- achieving better a perfomance score and reducing your byte-to-carbon emissions
 
-## Small impact
+## Easy
 
 ### Styles
  - Define your shell styles in index.html to avoid additional network requests
@@ -14,7 +14,7 @@ Here's an example of a blank favicon converted to base64 to get rid of a netowrk
 <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
 ```
 
-## Average impact
+## Medium
 
 ### Preconnect
 Preconnect to external resources
@@ -48,7 +48,7 @@ I have yet to see any perfomance benefit from this
 ### Prefetch
 Prefetched resources from the main bundle will decrease your scores.
 
-## Large impact
+## Hard
 
 ### Webpack
 #### Chunking
