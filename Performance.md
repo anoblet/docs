@@ -1,6 +1,6 @@
 # The last mile -- achieving better a perfomance score and reducing your byte-to-carbon emissions
 
-## Hard
+## Large impact
 
 ### Webpack
 #### Chunking
@@ -9,7 +9,7 @@
  - Chunk large libs like Firebase
  - It's possible to chunk two dynamic imports together by providing the same `/* webpackChunkName */`
 
-## Intermediate
+## Average impact
 
 ### Preconnect
 Preconnect to external resources
@@ -43,7 +43,7 @@ I have yet to see any perfomance benefit from this
 ### Prefetch
 Prefetched resources from the main bundle will decrease your scores.
 
-## Easy
+## Small impact
 
 ### Styles
  - Define your shell styles in index.html to avoid additional network requests
