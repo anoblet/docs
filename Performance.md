@@ -1,4 +1,4 @@
-# The last mile -- achieving better a perfomance score and reducing byte-to-carbon emissions
+# The last mile -- achieving a better perfomance score and reducing byte-to-carbon emissions
 
 ## Easy
 
