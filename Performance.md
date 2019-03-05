@@ -2,6 +2,13 @@
  - Define your shell styles in index.html to avoid additional network requests
  - Set your background color/image in index.html so that a refresh does not flash white
 
+ 
+## Favicon
+
+```
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+```
+
 ## Preconnect
 Preconnect to external resources
 
@@ -40,10 +47,5 @@ Prefetched resources from the main bundle will decrease your scores.
  - If a resource only provides side-effects(component registration) import it dynamically unless needed on first-render
  - Chunk large libs like Firebase
  - It's possible to chunk two dynamic imports together by providing the same `/* webpackChunkName */`
- 
-## Favicon
 
-```
-<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
-```
 
