@@ -14,9 +14,9 @@ Here's an example of a blank favicon converted to base64 to get rid of a netowrk
 <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
 ```
 
-# Intermediate
+## Intermediate
 
-## Preconnect
+### Preconnect
 Preconnect to external resources
 
 ```
@@ -25,7 +25,7 @@ Preconnect to external resources
 <link rel="preconnect" href="https://firestore.googleapis.com" />
 ```
 
-## Preload fonts
+### Preload fonts
 You'll want to host your fonts locally, so they can be cached. Then you want to preload them like this:
 
 ```
@@ -38,20 +38,20 @@ You'll want to host your fonts locally, so they can be cached. Then you want to 
 />
 ```
 
-## DNS prefetch
+### DNS prefetch
 I have yet to see any perfomance benefit from this
 
 ```
 <link rel="dns-prefetch" href="https://www.googleapis.com" />
 ```
 
-## Prefetch
+### Prefetch
 Prefetched resources from the main bundle will decrease your scores.
 
-# Hard
+## Hard
 
-## Webpack
-### Chunking
+### Webpack
+#### Chunking
  - Statically import your app shell resources/components
  - If a resource only provides side-effects(component registration) import it dynamically unless needed on first-render
  - Chunk large libs like Firebase
