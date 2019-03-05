@@ -34,7 +34,8 @@ I have yet to see any perfomance benefit from this
 ## Prefetch
 Prefetched resources from the main bundle will decrease your scores.
 
-## Chunking
+## Webpack
+### Chunking
  - Statically import your app shell resources/components
  - If a resource only provides side-effects(component registration) import it dynamically unless needed on first-render
  - Chunk large libs like Firebase
