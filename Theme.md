@@ -2,10 +2,7 @@
 
 ## Let's define out objectives
  * What is lit-html?
- * How do we define a theme?
- * How can we accomplish this complimentary to the "timing of our app"?
-   * Styles will be available on the app or user scope
-     
+ * How do we define a theme?     
 
 Theming in lit relies sometimes (a lot) on custom properties in css:
 
