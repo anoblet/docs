@@ -1,4 +1,4 @@
-Easy: 
+# Easy
 
 ## Styles
  - Define your shell styles in index.html to avoid additional network requests
@@ -11,7 +11,7 @@ Easy:
 <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
 ```
 
-Intermediate:
+# Intermediate
 
 ## Preconnect
 Preconnect to external resources
@@ -45,7 +45,7 @@ I have yet to see any perfomance benefit from this
 ## Prefetch
 Prefetched resources from the main bundle will decrease your scores.
 
-Hard:
+# Hard
 
 ## Webpack
 ### Chunking
