@@ -8,7 +8,7 @@
 
  
 ### Favicon
-Here's an example of a blank favicon converted to base64 to get rid of a netowrk request
+Here's an example of a blank favicon converted to base64 to get rid of a network request
 
 ```
 <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
