@@ -24,6 +24,13 @@ You'll want to host your fonts locally, so they can be cached. Then you want to 
 />
 ```
 
+## DNS prefetch
+I have yet to see any perfomance benefit from this
+
+```
+<link rel="dns-prefetch" href="https://www.googleapis.com" />
+```
+
 ## Prefetch
 Prefetched resources from the main bundle will decrease your scores.
 
