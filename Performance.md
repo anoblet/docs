@@ -2,9 +2,9 @@
 
 # Easy
 
-## Styles
- - Define your shell styles in index.html to avoid additional network requests
- - Set your background color/image in index.html so that a refresh does not flash white
+  ## Styles
+     - Define your shell styles in index.html to avoid additional network requests
+     - Set your background color/image in index.html so that a refresh does not flash white
 
  
 ## Favicon
