@@ -1,10 +1,8 @@
-Another pattern for css custom properties.
+Pattern for css custom properties.
 
 Allow overrides on the global namespace for theming on the app level. 
 ```js
 // App/Style.ts
- 
- 
 export default css`
   :host { 
     --padding: 2em;
