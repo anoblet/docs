@@ -3,14 +3,14 @@ My pattern for seperation of concerns:
 File Structure:
 
 - MyFeature
-  - Component.ts
-  - Style.ts
-  - Template.ts
+  - Component.js/ts
+  - Style.js/ts
+  - Template.js/ts
   
 Code
   
 ```js
-// Component.ts
+// Component.js/ts
 
 import { LitElement, customElement } from "lit-element";
 
@@ -28,13 +28,13 @@ export class MyFeature extends LitElement {
   }
 }
 
-// Style.ts
+// Style.js/ts
 
 import { css } from "lit-element";
 
 export default css``;
 
-// Template.ts
+// Template.js/ts
 
 import { html } from "lit-element";
 
