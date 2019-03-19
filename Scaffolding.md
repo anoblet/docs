@@ -5,7 +5,7 @@ Feature
  - Style.ts
  - Template.ts
 
-```
+```js
 // Component.ts
 
 import { LitElement, customElement } from "lit-element";
