@@ -1,7 +1,6 @@
 Another pattern for css custom properties.
 
 Allow overrides on the global namespace for theming on the app level. 
-
 ```js
 // App/Style.ts
  
