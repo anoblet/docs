@@ -1,4 +1,4 @@
-My pattern for seperation of concerns:
+Seperation of concerns:
 
 File Structure:
 
