@@ -24,4 +24,5 @@ export default css`
     --card-padding: var(--padding, 1em);
     --card-border: var(--border, 1px solid #FFF;
   }
+`
 ```
