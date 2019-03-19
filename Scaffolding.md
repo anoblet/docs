@@ -1,6 +1,6 @@
-Here is the structure I use for a lit-element project:
+Seperation of concerns:
 
-Feature
+- Feature
  - Component.ts
  - Style.ts
  - Template.ts
