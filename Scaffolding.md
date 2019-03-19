@@ -1,5 +1,7 @@
 My pattern for seperation of concerns:
 
+File Structure:
+
 - MyFeature
   - Component.ts
   - Style.ts
