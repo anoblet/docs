@@ -1,4 +1,4 @@
-Seperation of concerns:
+My pattern for seperation of concerns:
 
 - MyFeature
   - Component.ts
