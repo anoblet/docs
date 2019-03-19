@@ -1,5 +1,7 @@
 Seperation of concerns:
 
+Feature/
+
 - Component.ts
 - Style.ts
 - Template.ts
