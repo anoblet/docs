@@ -1,6 +1,6 @@
 Seperation of concerns:
 
-- src
+- components
   - Feature
     - Component.ts
     - Style.ts
