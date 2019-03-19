@@ -5,7 +5,7 @@ File Structure:
   - Style.ts
   - Template.ts
   
-Code
+Code:
   
 ```js
 // Component.ts
