@@ -1,7 +1,7 @@
 Seperation of concerns:
 
 - components
-  - Feature
+  - MyFeature
     - Component.ts
     - Style.ts
     - Template.ts
@@ -13,8 +13,8 @@ import { LitElement, customElement } from "lit-element";
 import Style from "./Style";
 import Template from "./Template";
 
-@customElement("feature-component")
-export class Feature extends LitElement {
+@customElement("myfeature-component")
+export class MyFeature extends LitElement {
   static get styles() {
     return Style
   }
