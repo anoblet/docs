@@ -1,9 +1,10 @@
 Seperation of concerns:
 
-- Feature
-  - Component.ts
-  - Style.ts
-  - Template.ts
+- src
+  - Feature
+    - Component.ts
+    - Style.ts
+    - Template.ts
 ```js
 // Component.ts
 
