@@ -1,5 +1,3 @@
-Seperation of concerns:
-
 File Structure:
 
 - MyFeature
