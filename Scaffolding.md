@@ -7,6 +7,9 @@ File Structure:
   - Style.ts
   - Template.ts
 ```js
+
+Code
+
 // Component.ts
 
 import { LitElement, customElement } from "lit-element";
