@@ -6,10 +6,10 @@ File Structure:
   - Component.ts
   - Style.ts
   - Template.ts
-```js
-
+  
 Code
-
+  
+```js
 // Component.ts
 
 import { LitElement, customElement } from "lit-element";
