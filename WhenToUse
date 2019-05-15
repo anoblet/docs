@@ -1,0 +1,7 @@
+If a sub-part could be solved by a template
+```const subPart = html``;```
+, don't make a component/shadowDom?
+
+If a template fires events, wrap it in a component. Especially if it's repeated.
+
+There's a "spin-up" cost to registering a component, as well as the boilerplate needed to create it.
