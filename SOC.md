@@ -17,13 +17,8 @@ import Template from "./Template";
 
 @customElement("myfeature-component")
 export class MyFeature extends LitElement {
-  static get styles() {
-    return Style
-  }
-
-  public render() {
-    return Template.bind(this)();
-  }
+  public static styles = Style;
+  public render = Template.bind(this);
 }
 
 // Style.ts
