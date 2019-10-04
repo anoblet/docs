@@ -4,21 +4,21 @@ File Structure:
   - Component.ts
   - Style.ts
   - Template.ts
-  
+
 Code:
-  
+
 ```js
 // Component.ts
 
 import { LitElement, customElement } from "lit-element";
 
-import Style from "./Style";
-import Template from "./Template";
+import style from "./Style";
+import template from "./Template";
 
 @customElement("myfeature-component")
 export class MyFeature extends LitElement {
-  public static styles = Style;
-  public render = Template.bind(this);
+  public static styles = style;
+  public render = template.bind(this);
 }
 
 // Style.ts
